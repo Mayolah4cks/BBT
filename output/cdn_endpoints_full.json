@@ -1,0 +1,350 @@
+[
+  {
+    "path": "/api/search/general/preview/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/6397.4f536385.js",
+    "priority": "MEDIUM",
+    "ctx": "eURL:\"\"};function d(t,e){const n=t,r=f.genBaseURL(\"/api/search/general/preview/\"),i={keyword:n.keywo"
+  },
+  {
+    "path": "/aweme/v1/music/recommend/by/video/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "turn{logEventName:\"getMusicRecommendByVideo\",path:\"/aweme/v1/music/recommend/by/video/\",method:r.B1."
+  },
+  {
+    "path": "/aweme/v1/music/detail/list/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/6397.4f536385.js",
+    "priority": "MEDIUM",
+    "ctx": "},e)}function y(t,e){const n=t||{},r=p.genBaseURL(\"/aweme/v1/music/detail/list/\"),i={music_ids:n.mus"
+  },
+  {
+    "path": "/api/v1/streamer_desktop/account_info/get",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/6397.4f536385.js",
+    "priority": "HIGH",
+    "ctx": "((function(t){return null==t?void 0:t.data}))},Xt=\"/api/v1/streamer_desktop/account_info/get\",Jt={My"
+  },
+  {
+    "path": "/api/v1/streamer_desktop/selection/search",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/6397.4f536385.js",
+    "priority": "HIGH",
+    "ctx": "streamer_desktop/account_info/get\",Jt={MyShopList:\"/api/v1/streamer_desktop/selection/search\",ShowCa"
+  },
+  {
+    "path": "/api/v1/streamer_desktop/showcase_product/list",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/6397.4f536385.js",
+    "priority": "HIGH",
+    "ctx": "1/streamer_desktop/selection/search\",ShowCaseList:\"/api/v1/streamer_desktop/showcase_product/list\",S"
+  },
+  {
+    "path": "/api/v1/streamer_desktop/search_product/list",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/6397.4f536385.js",
+    "priority": "HIGH",
+    "ctx": "mer_desktop/showcase_product/list\",ShowCaseSearch:\"/api/v1/streamer_desktop/search_product/list\"},$t"
+  },
+  {
+    "path": "/aweme/v1/oec/content/creator/anchor/title/check",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/6397.4f536385.js",
+    "priority": "HIGH",
+    "ctx": "/api/v1/streamer_desktop/search_product/list\"},$t=\"/aweme/v1/oec/content/creator/anchor/title/check\""
+  },
+  {
+    "path": "/aweme/v1/oec/content/creator/products",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/6397.4f536385.js",
+    "priority": "HIGH",
+    "ctx": "eme/v1/oec/content/creator/anchor/title/check\",Yt=\"/aweme/v1/oec/content/creator/products\";function "
+  },
+  {
+    "path": "/api/v1/user/profile/upload/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/v1/user/profile/upload/\"),i={web_user_profil"
+  },
+  {
+    "path": "/aweme/v2/data/insight/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "deoPost:\"/api/post/item_list/\",AnalyticsInsightV2:\"/aweme/v2/data/insight/\",CommentKeyWord:\"/comment"
+  },
+  {
+    "path": "/aweme/v1/metrics/setStatus/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "yWord:\"/comment/v1/get_key_words/\",OptInAnalytics:\"/aweme/v1/metrics/setStatus/\",GetAnalyticsEligibi"
+  },
+  {
+    "path": "/aweme/v1/metrics/getStatus/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "me/v1/metrics/setStatus/\",GetAnalyticsEligibility:\"/aweme/v1/metrics/getStatus/\",GetFollowRelationCo"
+  },
+  {
+    "path": "/api/v1/draft/detail/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/v1/draft/detail/\"),i={draft_id:n.draft_id};r"
+  },
+  {
+    "path": "/api/comment/delete/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/comment/delete/\"),i={cid:n.cid,action:n.acti"
+  },
+  {
+    "path": "/api/comment/digg/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/comment/digg/\"),i={cid:n.cid,aweme_id:n.awem"
+  },
+  {
+    "path": "/api/comment/list/reply/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/comment/list/reply/\"),i={comment_id:n.commen"
+  },
+  {
+    "path": "/api/comment/publish/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/comment/publish/\"),i={aweme_id:n.aweme_id,te"
+  },
+  {
+    "path": "/api/comment/list/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/comment/list/\"),i={aweme_id:n.aweme_id,curso"
+  },
+  {
+    "path": "/api/v1/post/detail/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/v1/post/detail/\"),i={item_id:n.item_id};retu"
+  },
+  {
+    "path": "/creator_studio/inspiration/pack/video/v1",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/creator_studio/inspiration/pack/video/v1\"),i={it"
+  },
+  {
+    "path": "/creator_studio/inspiration/trending/video/v2",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/creator_studio/inspiration/trending/video/v2\"),i"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/async_tasks/icon_info",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": "_tasks_icon_info(e,t){const n=e,r=this.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/async_tasks/ic"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/async_tasks/pop_up_update",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": "ks_pop_up_update(e,t){const n=e,r=this.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/async_tasks/po"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/smart_clip/project/list",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": "project_list(e,t){const n=e||{},r=this.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/smart_clip/pro"
+  },
+  {
+    "path": "/tiktokstudio/tool/smartsplit/result",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "tOwnPropertyDescriptor(t,n))})),e}const Sn=3e3,yn=\"/tiktokstudio/tool/smartsplit/result\",In=\"ICON_PR"
+  },
+  {
+    "path": "/api/at/default/list/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "_at_default_list(e,t){const n=e,r=this.genBaseURL(\"/api/at/default/list/\"),i={count:n.count,cursor:n"
+  },
+  {
+    "path": "/aweme/v1/user/proaccount/categorytype/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": "account_categorytype(e,t){const n=this.genBaseURL(\"/aweme/v1/user/proaccount/categorytype/\");return "
+  },
+  {
+    "path": "/aweme/v1/user/proaccount/edit/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": "account_edit(e,t){const n=e||{},r=this.genBaseURL(\"/aweme/v1/user/proaccount/edit/\"),i={category_nam"
+  },
+  {
+    "path": "/aweme/v1/user/proaccount/setting/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "ount_setting(e,t){const n=e||{},r=this.genBaseURL(\"/aweme/v1/user/proaccount/setting/\"),i={action_ty"
+  },
+  {
+    "path": "/api/post/item_list/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "i_post_item_list(e,t){const n=e,r=this.genBaseURL(\"/api/post/item_list/\"),i={aid:n.aid,count:n.count"
+  },
+  {
+    "path": "/api/item/detail/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "}api_item_detail(e,t){const n=e,r=this.genBaseURL(\"/api/item/detail/\"),i={itemId:n.itemId,uCode:n.uC"
+  },
+  {
+    "path": "/api/commit/item/digg/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": "commit_item_digg(e,t){const n=e,r=this.genBaseURL(\"/api/commit/item/digg/\"),i={aweme_id:n.aweme_id,t"
+  },
+  {
+    "path": "/aweme/v2/aweme/feedback/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": "eme_feedback_get(e,t){const n=e,r=this.genBaseURL(\"/aweme/v2/aweme/feedback/\"),i={object_id:n.object"
+  },
+  {
+    "path": "/aweme/v3/feedback/reasons/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "HIGH",
+    "ctx": "feedback_reasons(e,t){const n=e,r=this.genBaseURL(\"/aweme/v3/feedback/reasons/\"),i={report_type:n.re"
+  },
+  {
+    "path": "/api/user/detail/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator-center-web/static/js/main.3bbdad9c.js",
+    "priority": "MEDIUM",
+    "ctx": ",t){var n=this._validRequest(e),r=this.genBaseURL(\"/api/user/detail/\"),i={userId:n.userId,uCode:n.uC"
+  },
+  {
+    "path": "/api/upload/search/user/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/1507.c230bf52.js",
+    "priority": "MEDIUM",
+    "ctx": "/api/v1/item/create/bulk/\",\"/api/v1/item/create/\",\"/api/upload/search/user/\",\"/api/upload/challenge/"
+  },
+  {
+    "path": "/api/upload/challenge/sug/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/1507.c230bf52.js",
+    "priority": "MEDIUM",
+    "ctx": "\"/api/v1/item/create/\",\"/api/upload/search/user/\",\"/api/upload/challenge/sug/\",\"/api/post/item_list/"
+  },
+  {
+    "path": "/api/v1/video/upload/auth/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/1507.c230bf52.js",
+    "priority": "MEDIUM",
+    "ctx": "i/post/item_list/\",\"/api/v1/user/profile/upload/\",\"/api/v1/video/upload/auth/\",\"/api/v1/draft/create"
+  },
+  {
+    "path": "/api/v1/draft/create_update/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/1507.c230bf52.js",
+    "priority": "MEDIUM",
+    "ctx": "ser/profile/upload/\",\"/api/v1/video/upload/auth/\",\"/api/v1/draft/create_update/\",\"/tiktok/web/projec"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/post_draft/info",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "t){case 0:return t.abrupt(\"return\",(0,v.Gx)({path:\"/tiktok_creator/editor_tool/api/v1/post_draft/inf"
+  },
+  {
+    "path": "/creator/api/upload-context",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "MEDIUM",
+    "ctx": "ion(){return{logEventName:\"getUploadContext\",path:\"/creator/api/upload-context\",method:r.B1.GET}}}),"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/upload_tos",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "return{logEventName:\"postVEDraftUploadToTos\",path:\"/tiktok_creator/editor_tool/api/v1/upload_tos\",me"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/post_draft/save",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "ction(t){return{logEventName:\"savePostDraft\",path:\"/tiktok_creator/editor_tool/api/v1/post_draft/sav"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/post_draft/editor_save",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "t){return{logEventName:\"createMobilePreview\",path:\"/tiktok_creator/editor_tool/api/v1/post_draft/edi"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/post_draft/editor_preview",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "return{logEventName:\"getMobilePreviewStatus\",path:\"/tiktok_creator/editor_tool/api/v1/post_draft/edi"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/post_draft/web_editor_preview_result",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "return{logEventName:\"getMobilePreviewResult\",path:\"/tiktok_creator/editor_tool/api/v1/post_draft/web"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/smart_clip/project/info",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "nitialized=!0)}function r(t,e){var n=i.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/smart_clip/pro"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/smart_clip/project/reel_post_vid",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "\",params:r},e)}function a(t,e){var n=i.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/smart_clip/pro"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/smart_clip/project/video_transcription",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "\",params:r},e)}function u(t,e){var n=i.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/smart_clip/pro"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/smart_clip/project/reel_update",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "\",params:r},e)}function s(t,e){var n=i.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/smart_clip/pro"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/post_draft/video_transcription",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "ST\",data:r},e)}function c(t,e){var n=i.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/post_draft/vid"
+  },
+  {
+    "path": "/tiktok_creator/editor_tool/api/v1/post_draft/get_image_urls",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "HIGH",
+    "ctx": "\",params:r},e)}function l(t,e){var n=i.genBaseURL(\"/tiktok_creator/editor_tool/api/v1/post_draft/get"
+  },
+  {
+    "path": "/tiktokstudio/upload/draft-not-supported",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "MEDIUM",
+    "ctx": "t}({}),r=function(t){return t.DRAFT_NOT_SUPPORTED=\"/tiktokstudio/upload/draft-not-supported\",t.UNAVA"
+  },
+  {
+    "path": "/tiktokstudio/upload/unavailable",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "MEDIUM",
+    "ctx": "kstudio/upload/draft-not-supported\",t.UNAVAILABLE=\"/tiktokstudio/upload/unavailable\",t.EDIT_POST=\"/t"
+  },
+  {
+    "path": "/tiktokstudio/upload/",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "MEDIUM",
+    "ctx": "POST=\"/tiktokstudio/upload/post/:itemId\",t.UPLOAD=\"/tiktokstudio/upload/\",t.POST_PHOTO=\"/tiktokstudi"
+  },
+  {
+    "path": "/tiktokstudio/upload/post/photo",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "MEDIUM",
+    "ctx": "Id\",t.UPLOAD=\"/tiktokstudio/upload/\",t.POST_PHOTO=\"/tiktokstudio/upload/post/photo\",t.MUSIC_LIBRARY="
+  },
+  {
+    "path": "/tiktokstudio/sound-library/playlist",
+    "source": "https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/8635.466a5b67.js",
+    "priority": "MEDIUM",
+    "ctx": "kstudio/sound-library/\",t.MUSIC_PLAYLIST_REDIRECT=\"/tiktokstudio/sound-library/playlist\",t.MUSIC_PLA"
+  }
+]
