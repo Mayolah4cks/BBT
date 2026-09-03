@@ -1,0 +1,26 @@
+# Tier 1 — mobile-app "paid_content" endpoints most likely to share the same
+# ID-trust bug as CreativeOne/Asset/BatchGetImgURLs & BatchGetClientVideoURLs.
+#
+# Source: static string extraction from a user-provided (self SSL-unpinned)
+# TikTok Android APK — classes*.dex strings, grepped for the /tiktok/v*/
+# path convention and confirmed against real field-name constants found
+# in the same binary (collection_id, item_ids, album_id, episode_id).
+#
+# NOT confirmed: exact request body per endpoint, host, or mobile signing
+# headers (X-Gorgon/X-Khronos/device_id/etc. — different auth model than
+# the ads.tiktok.com cookie+CSRF flow). Capture the real request by using
+# the paid mini-drama/collection feature in the app itself through
+# mitmproxy/Burp (this is exactly what the SSL-bypass patch is for), then
+# swap the ID for an episode/video you have NOT purchased or subscribed to.
+
+/tiktok/v1/paid_content/mini_drama/video_by_ids       # batch-by-IDs, closest structural match to BatchGetImgURLs
+/tiktok/v1/paid_content/mini_drama/video              # singular per-video variant
+/tiktok/v1/paid_content/collection/video              # video-by-collection — check v1 AND v3 below
+/tiktok/v3/paid_content/collection/video
+/tiktok/v1/paid_content/collection/detail             # collection detail by ID — check for leaked preview/play URLs
+/tiktok/v1/paid_content/collection/episode_panel      # episode list by collection ID
+/tiktok/v1/paid_content/product/purchased_content     # literally "purchased content" — test if it verifies you actually purchased
+/tiktok/v1/paid_content/collection/subscription_detail
+
+# Candidate field names seen in the binary (not confirmed per-endpoint):
+#   collection_id, item_ids, album_id, episode_id
