@@ -1,0 +1,21 @@
+# Tier 1 — closest structural analogs to CreativeOne/Asset/BatchGetImgURLs
+# (take a caller-supplied asset ID/URI, mint a URL that lets you view/download
+# the underlying file — the exact IDOR shape you already confirmed).
+# Test manually with your own session, swapping only the path + a body that
+# matches each RPC's expected field name(s).
+
+CreativeOne/Asset/BatchGetImgURLs                    # confirmed — accepts arbitrary imageURIs
+CreativeOne/Asset/BatchGetClientVideoURLs            # direct video sibling of the above
+CreativeOne/OrderQuery/GetVideoUrlByVideoIDOrItemID  # single ID -> playable URL
+CreativeOne/OrderQuery/ClientBatchGetItemPreview     # batch-by-ID preview, same shape as BatchGetImgURLs
+CreativeOne/OrderCommand/ClientGenerateVideoShareLink
+CreativeOne/OrderCommand/ClientGenerateShareLinkForContents
+CreativeOne/OrderCommand/GeneratePreviewLink
+CreativeOne/PartnerBusiness/ClientGenerateShareLink
+CreativeOne/InviteLink/ClientGetVideoByURL
+CreativeOne/Creator/UserGenTTOCollabsSavedListURL
+CreativeOne/TopAds/MaterialDetail                    # material lookup by ID — check cross-advertiser access
+CreativeOne/TopAds/MaterialList
+CreativeOne/TopAds/SearchMaterial
+CreativeOne/OrderCommand/ClientDownloadVideo
+CreativeOne/OrderCommand/ClientDownloadVideoDetail
